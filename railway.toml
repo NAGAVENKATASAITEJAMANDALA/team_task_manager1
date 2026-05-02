@@ -1,0 +1,19 @@
+[build]
+buildCommand = "cd frontend && npm install && npm run build && cd ../backend && npm install"
+watchPatterns = ["backend/**", "frontend/**"]
+
+[deploy]
+startCommand = "cd backend && node server.js"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "teamflow-api"
+
+[services.variables]
+NODE_ENV = "production"
+PORT = "5000"
+JWT_SECRET = "change-this-to-a-random-secret"
+FRONTEND_URL = "*"
