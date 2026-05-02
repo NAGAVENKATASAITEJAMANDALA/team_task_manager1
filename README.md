@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TeamFlow - Team Task Manager
 
 A full-stack web application for managing projects, tasks, and teams with role-based access control.
@@ -207,3 +208,6 @@ Add `DATABASE_URL` to your Railway environment variables (Railway provides a fre
 4. Show kanban view and status changes
 5. Show dashboard with overdue detection
 6. Show admin's full user list access
+=======
+# team_task_manager
+>>>>>>> 767a5849f6a1f93b1fdcf6ce43e1809bbc8a6bd0
